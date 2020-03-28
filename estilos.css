@@ -1,0 +1,388 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/*SECCION ENCABEZADO*/
+
+.encabezados{
+  display: flex;
+}
+
+.izquierda{
+  background-color: #FFDE00;
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  line-height: 5rem;
+}
+
+.derecha{
+  background: url(imagenes/planeta.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+}
+
+.titulares{
+  height: 18vh;
+  padding: 30vh 1vh;
+}
+
+h1{
+  font-size: 6rem;
+  font-family: 'Anton', sans-serif;
+}
+
+.subtitulo{
+  font-size: 2rem;
+  font-family: 'Anton', sans-serif;
+}
+
+.boton{
+  text-decoration-line: none;
+  color: white;
+  background: #969B9A;
+  padding: 2%;
+  border-radius: 20px;
+  font-family: 'Anton', sans-serif;
+}
+
+.boton:hover{
+  background: white;
+  color: gray;
+}
+
+/*SECCION ORIGEN*/
+
+#origen{
+  background: grey;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 18vh 0;
+}
+
+.texto{
+  text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.video{
+  width: 50%;
+  text-align: center;
+}
+
+iframe{
+  border: 2px solid white;
+}
+
+.contenedor{
+  width: 83%;
+  line-height: 1.7rem;
+}
+
+h2{
+  font-family: 'Acme', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 4%;
+}
+
+p{
+  font-family: 'Acme', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 3%;
+}
+
+.boton-youtube{
+  text-decoration-line: none;
+  color: grey;
+  background: white;
+  padding: 2%;
+  border-radius: 20px;
+  font-family: 'Acme', sans-serif;
+}
+
+.boton-youtube:hover{
+  border: 2px solid white;
+  background: grey;
+  color: white;
+}
+
+/*SECCION ARTICULOS*/
+
+#articulos{
+  background-color: grey;
+  color: grey;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+
+.articulos{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.articulo-1, .articulo-2, .articulo-3{
+  margin: auto;
+  text-align: center;
+  width:25%;
+  background: white;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+h4{
+  font-size: 2rem;
+  font-family: 'Acme', sans-serif;
+}
+
+a{
+  text-decoration-line: none;
+  color: grey;
+  font-family: 'Acme', sans-serif;
+  border: 2px solid grey;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+a:hover{
+  background: grey;
+  color: white;
+}
+
+h3{
+  color: white;
+}
+
+.texto-articulo{
+  margin-bottom: 6%;
+}
+
+img{
+  width: 100%;
+}
+
+/*SECCION PIE DE PAGINA*/
+
+.boton-pie{
+  border: none;
+  color: white;
+}
+
+.boton-pie:hover{
+  color: grey;
+  text-decoration-line: underline;
+  background: none;
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  line-height: 2rem;
+}
+
+h5{
+  font-family: cursive;
+}
+
+.main{
+  min-height: calc(100vh-80px);
+}
+
+.footer{
+  height: 90px;
+}
+
+footer a{
+  padding: 0%;
+  margin-right: 2%;
+}
+
+i{
+  margin-right: 0.5%;
+  font-size: 25px;
+}
+
+/* RESPONSIVE PARA CELULARES*/
+
+@media (max-width: 450px){
+  
+  .encabezados{
+    display: block;
+  }
+  .izquierda{
+    width: 100%;
+    height: 50vh;
+  }
+  .derecha{
+    width: 100%;
+    height: 50vh;
+  }
+  .titulares {
+    height: 18vh;
+    padding: 16vh 1vh;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .boton{
+    padding: 0 10%;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 70% auto;
+  }
+  #origen{
+    display: block;
+    padding: 4vh 0;
+  }
+  .texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  p{
+    margin-bottom: 5%;
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+  }
+  .video{
+    width: 100%;
+  }
+  iframe{
+    border: 4px solid white;
+    margin: 7% 0;
+    width: initial;
+  }
+  .articulos{
+    display: block;
+  }
+  .articulo-1, .articulo-2, .articulo-3{
+    width: 88%;
+    padding: 5% 0;
+    margin: 6% auto;
+  }
+  .footer{
+    height: 130px;
+  }
+  .boton-pie{
+    display: list-item;
+  }
+}
+
+/* RESPONSIVE PARA TABLETS*/
+
+@media (max-width: 768px) and (min-width: 451px){
+  
+  .encabezados{
+    display: block;
+  }
+  .izquierda{
+    width: 100%;
+    height: 50vh;
+  }
+  .derecha{
+    width: 100%;
+    height: 50vh;
+  }
+  .titulares{
+    padding: 20vh 1vh;
+  }
+  h1{
+    font-size: 8rem;
+  }
+  .subtitulo{
+    font-size: 3rem;
+    margin: 2% 0;
+  }
+  .boton{
+    padding: 2%;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 34% 0;
+  }
+  #origen{
+    display: block;
+    padding: 2vh;
+  }
+  .texto{
+    width: 95%;
+  }
+  .video{
+    width: 100%;
+    margin: 4% 0;
+  }
+  .contenedor{
+    line-height: 2rem;
+  }
+  h2{
+    font-size: 2.8rem;
+  }
+  p{
+    font-size: 2rem;
+  }
+  .boton-youtube{
+    font-size: 1.5rem;
+  }
+  .articulos{
+    display: block;
+    
+  }
+  .articulo-1, .articulo-2{
+    width: 70%;
+    margin: 5% auto;
+  }
+  .footer{
+    height: 100px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
